@@ -1,0 +1,26 @@
+Dev------------------->
+
+# Build the Docker image using the development Dockerfile
+docker build -t backend-app:dev -f docker/development/Dockerfile .
+
+# Run the container interactively with volume mounts and port mapping
+docker run --rm -it \
+  -v $(pwd):/usr/src/backend-app \
+  -v /usr/src/backend-app/node_modules \
+  -p 3000:3000 \
+  backend-app:dev
+
+
+Prod------------------->
+
+# Build the Docker image using the production Dockerfile
+docker build -t backend-app:1.0.0 -f docker/production/Dockerfile .
+
+# Run the container detached with volume mounts and port mapping
+docker run -d \
+  -v $(pwd):/usr/src/backend-app \
+  -v /usr/src/backend-app/node_modules \
+  -p 3000:3000 \
+  backend-app:1.0.0
+
+
