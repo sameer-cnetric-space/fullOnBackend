@@ -1,0 +1,65 @@
+├── .dockerignore
+├── .env.dev
+├── .env.example
+├── .env.prod
+├── .gitattributes
+├── .gitignore
+├── .husky
+│  ├── commit-msg
+│  └── pre-commit
+├── .prettierrc
+├── commitlint.config.js
+├── dist
+│  └── index.js
+├── docker
+│  ├── dev
+│  │  └── Dockerfile
+│  └── prod
+│    └── Dockerfile
+├── DockerCommands.txt
+├── ecosystem.config.js
+├── eslint.config.mjs
+├── logs
+│  ├── .gitignore
+│  └── dev.log
+├── migrations
+│  └── .gitkeep
+├── nginx
+│  ├── http.conf
+│  └── https.conf
+├── nodemon.json
+├── package-lock.json
+├── package.json
+├── public
+├── README.md
+├── scripts
+│  └── migration.js
+├── src
+│  ├── app.ts
+│  ├── config
+│  │  ├── config.ts
+│  │  └── rateLimiter.ts
+│  ├── constant
+│  │  ├── application.ts
+│  │  └── responseMessage.ts
+│  ├── controllers
+│  │  └── apiController.ts
+│  ├── middlewares
+│  │  ├── globalErrorHandler.ts
+│  │  └── rateLimit.ts
+│  ├── models
+│  ├── router
+│  │  └── apiRouter.ts
+│  ├── server.ts
+│  ├── services
+│  │  └── DBService.ts
+│  ├── types
+│  │  └── types.ts
+│  └── utils
+│    ├── errorObject.ts
+│    ├── httpError.ts
+│    ├── httpResponse.ts
+│    ├── logger.ts
+│    └── quicker.ts
+├── test
+└── tsconfig.json
